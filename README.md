@@ -107,9 +107,11 @@ pip install pymoo numpy
 
 ## Project Structure
 
-├── NSGA-II_Test.py        # Python implementation (V2)
-├── MorphoGenetic.pdf      # Original C# implementation (V1)
-└── README.md
+## Project Structure
+
+- `NSGA-II_Test.py` — Python implementation (V2)
+- `MorphoGenetic.pdf` — Original C# implementation (V1)
+- `README.md`
 
 ---
 
