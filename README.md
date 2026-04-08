@@ -5,11 +5,7 @@
 This project applies multi-objective optimization to generate age-friendly green space layouts in residential communities. 
 Using NSGA-II, the system balances green visibility, area compliance, spatial distribution, and connectivity to produce Pareto-optimal layout solutions.
 
-
-
-The project targets aging communities in China, where green 
-visibility has been shown to positively impact elderly residents' 
-physical and mental wellbeing.
+The project targets aging communities in China, where green visibility has been shown to positively impact elderly residents' physical and mental wellbeing.
 
 ---
 
@@ -26,24 +22,21 @@ physical and mental wellbeing.
 
 ## Optimization Objectives
 
-- **Objective 1:** Maximize Green View Index — raycasting from 
-  path sampling points to measure visible green coverage
-- **Objective 2:** Minimize Area Deviation — actual green area 
-  stays close to planning target (6,476 m²)
-- **Objective 3:** Minimize Distribution Unevenness — green space 
-  distributed proportionally across all zones
-- **Objective 4:** Minimize Isolated Patches — green cells should 
-  have at least one green neighbour (connectivity constraint)
+- **Objective 1:** Maximize Green View Index — raycasting from path sampling points to measure visible green coverage  
+- **Objective 2:** Minimize Area Deviation — actual green area stays close to planning target (6,476 m²)  
+- **Objective 3:** Minimize Distribution Unevenness — green space distributed proportionally across all zones  
+- **Objective 4:** Minimize Isolated Patches — green cells should have at least one green neighbour (connectivity constraint)
+  
 
 ---
 
 ## Methods
 
 ### Site Processing
-- Green boundaries processed via boolean difference with building 
-  footprints to generate valid green surfaces
-- Pedestrian paths sampled every 5 metres to generate observation 
-  points for green view calculation
+
+- Green boundaries processed via boolean difference with building footprints to generate valid green surfaces  
+- Pedestrian paths sampled every 5 metres to generate observation points for green view calculation
+  
 
 ### Grid Representation
 - Valid green area divided into uniform 5×5m grid cells
@@ -52,8 +45,7 @@ physical and mental wellbeing.
 
 ### NSGA-II Algorithm
 - **Representation:** Binary chromosome (one gene per grid cell)
-- **Selection:** Binary tournament based on non-dominated rank 
-  and crowding distance
+- **Selection:** Binary tournament based on non-dominated rank and crowding distance  
 - **Crossover:** Single-point crossover (90% probability)
 - **Mutation:** Bit-flip per gene (2% probability)
 - **Output:** Pareto-optimal solution set
@@ -124,8 +116,7 @@ pip install pymoo numpy
 ## Limitations
 
 - V2 uses simplified grid without real building geometry
-- Green View Index in V2 approximated by coverage ratio, 
-  not raycasting
+- Green View Index in V2 approximated by coverage ratio, not raycasting  
 - Small grid size (30 cells) compared to original 613 cells
 
 ## Future Work
