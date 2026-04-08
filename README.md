@@ -2,11 +2,10 @@
 **Comfort in Sight — Optimizing Green Space Layouts using Genetic Algorithm**
 
 ## Project Overview
-This project applies multi-objective optimization to generate 
-age-friendly green space layouts in residential communities. 
-Using NSGA-II, the system balances green visibility, area 
-compliance, spatial distribution, and connectivity to produce 
-Pareto-optimal layout solutions.
+This project applies multi-objective optimization to generate age-friendly green space layouts in residential communities. 
+Using NSGA-II, the system balances green visibility, area compliance, spatial distribution, and connectivity to produce Pareto-optimal layout solutions.
+
+
 
 The project targets aging communities in China, where green 
 visibility has been shown to positively impact elderly residents' 
