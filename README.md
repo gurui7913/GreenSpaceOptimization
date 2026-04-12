@@ -71,7 +71,7 @@ The project targets aging communities in China, where green visibility has been 
 ## Versions
 
 ### V1 — Grasshopper / C# (Original)
-Implemented in Rhino Grasshopper using C#. Full spatial 
+Implemented in Rhino Grasshopper WallaceiX. Full spatial 
 computation with real building geometry, Isovist-based 
 raycasting, and path sampling. Produced 10 Pareto-optimal 
 layouts visualised in 3D.
@@ -110,7 +110,7 @@ pip install pymoo numpy
 ## Project Structure
 
 - `NSGA-II_Test.py` — Python implementation (V2)
-- `MorphoGenetic.pdf` — Original C# implementation (V1)
+- `MorphoGenetic.pdf` — Original gh implementation (V1)
 - `README.md`
 
 ---
