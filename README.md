@@ -107,8 +107,6 @@ pip install pymoo numpy
 
 ## Project Structure
 
-## Project Structure
-
 - `NSGA-II_Test.py` — Python implementation (V2)
 - `MorphoGenetic.pdf` — Original gh implementation (V1)
 - `README.md`
